@@ -1,7 +1,14 @@
-// Hide navbar when nav-item has been clicked
-$('.nav-item').on('click',function() {
-    $('.navbar-collapse').collapse('hide');
-});
+// Hide navbar when clicked if navbar is collapsed
+$(document).ready(function() {
+ 
+  $(document).on("click",function(e){
+     var screenWidth = window.innerWidth;
+     if (screenWidth < 1200) {
+       $(".navbar-collapse").collapse('hide');
+     }
+  });
+ 
+ });
 
 
 // Add active class to current id in navbar when scrolling down the page
