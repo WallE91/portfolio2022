@@ -682,7 +682,7 @@ body{
     }
 
     .do-box{
-        margin-bottom: 30px;
+        margin-bottom: 15%;
     }
     
 }
@@ -702,8 +702,10 @@ body{
     }
 
     #do .section-container{
-        padding: 20% 7% 20% 7%;
+        padding: 30% 7% 20% 7%;
     }
+
+
 
     .img-box{
         display: block;
@@ -732,6 +734,10 @@ body{
         position: relative;
         float: left;
         margin-left: 20%;
+    }
+
+    .do-box{
+        margin-top: 5%;
     }
 
 }
