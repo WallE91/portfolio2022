@@ -129,7 +129,8 @@ body{
 }
 
 .navbar-brand{
-    font-family: $font-small-text;
+    font-family: $font-big-headers;
+    text-transform: uppercase;
     font-weight: $light;
     font-size: $basic-text;
     position: relative;
@@ -387,6 +388,10 @@ body{
 #do{
     color: $black;
     background-color: $white;
+}
+
+#do .section-container{
+    padding: 12% 5% 10% 5%;
 }
 
 .do-circle{

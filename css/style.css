@@ -79,7 +79,8 @@ body {
 }
 
 .navbar-brand {
-  font-family: Exo, Verdana, sans-serif;
+  font-family: "Titillium Web", Verdana, sans-serif;
+  text-transform: uppercase;
   font-weight: 300;
   font-size: 1.2rem;
   position: relative;
@@ -330,6 +331,10 @@ body {
 #do {
   color: #111;
   background-color: #fff;
+}
+
+#do .section-container {
+  padding: 12% 5% 10% 5%;
 }
 
 .do-circle {
