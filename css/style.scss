@@ -499,7 +499,7 @@ body{
 
 .footer-box{
     position: relative;
-    width: 400px;
+    max-width: 400px;
     height: 400px;
     background: $main1;
     margin: auto;
@@ -515,7 +515,7 @@ body{
     top: -200px;
     background-image: conic-gradient(transparent, transparent, transparent, $main2);
     animation: animate2 6s linear infinite;
-    opacity: .5;
+    opacity: .6;
 }
 
 .footer-box::after{
@@ -528,7 +528,7 @@ body{
     background-image: conic-gradient(transparent, transparent, transparent, $main2);
     animation: animate2 6s linear infinite;
     animation-delay: -3s;
-    opacity: .5;
+    opacity: .7;
 }
 
 .footer-box span{
@@ -576,7 +576,7 @@ body{
 .icon-footer{
     color: $main2;
     font-size: $icons;
-    margin: 3% 3% 3% 3%;
+    margin: 2% 2% 2% 2%;
     cursor: pointer;
     transition: .25s ease-in-out;
 }

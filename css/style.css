@@ -435,7 +435,7 @@ body {
 
 .footer-box {
   position: relative;
-  width: 400px;
+  max-width: 400px;
   height: 400px;
   background: #1572A1;
   margin: auto;
@@ -452,7 +452,7 @@ body {
   background-image: conic-gradient(transparent, transparent, transparent, #9AD0EC);
   -webkit-animation: animate2 6s linear infinite;
           animation: animate2 6s linear infinite;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .footer-box::after {
@@ -467,7 +467,7 @@ body {
           animation: animate2 6s linear infinite;
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .footer-box span {
@@ -521,7 +521,7 @@ body {
 .icon-footer {
   color: #9AD0EC;
   font-size: 3rem;
-  margin: 3% 3% 3% 3%;
+  margin: 2% 2% 2% 2%;
   cursor: pointer;
   transition: 0.25s ease-in-out;
 }
