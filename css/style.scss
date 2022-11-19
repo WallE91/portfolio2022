@@ -1,0 +1,732 @@
+/*cGoogle Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;600;900&family=Maven+Pro:wght@400;600;900&family=Orbitron:wght@600;700;800;900&family=Titillium+Web:wght@700;900&display=swap');
+
+
+/*SETTING VARIABLES****************************************************************************************************************************/
+
+/*color code variables*/
+$main1: #1572A1;
+$main2:#9AD0EC;
+$secondary1: #EFDAD7;
+$secondary2: #E3BEC6;
+$black: #111;
+$white: #fff;
+
+/*padding and margin variables*/
+$section-padding: 7% 12% 7% 12%;
+$section-padding-mobile: 15% 3% 10% 3%;
+
+/*font size variables*/
+$h1-size: 5rem;
+$h2-size: 2.7rem;
+$h3-size: 1.5rem;
+$basic-text: 1.2rem;
+$small-text: 0.9rem;
+$icons: 3rem;
+$icons-big: 5rem;
+$nav-items: 2rem;
+$h1-size-mobile: 2.9rem;
+$h2-size-mobile: 2.3rem;
+$h3-size-mobile: 1.4rem;
+$basic-text-mobile: 1rem;
+$icons-mobile: 2.2rem;
+$icons-navbar: 2.3rem;
+
+/*font weight variables*/
+$light: 300;
+$normal: 400;
+$bold: 600;
+$semi-fat: 700;
+$fat: 900;
+
+/*font family variables*/
+
+$font-big-headers: "Titillium Web", Verdana, sans-serif;
+$font-small-text: Exo, Verdana, sans-serif;
+$font-extra: "Maven Pro", Verdana, sans-serif;
+
+
+
+
+/*MAIN CSS****************************************************************************************************************************/
+
+
+/*General*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: $font-extra;
+    text-align: center;
+}
+
+/*Sections*/
+
+.color-dark-section{
+    background-color: $main1;
+    color: $white;
+}
+
+.color-light-section{
+    background-color: $white;
+    color: $main1;
+}
+
+.color-black-section{
+    background-color: $black;
+    color: $main2;
+}
+
+.color-black2-section{
+    background-color: $black;
+    color: $secondary1;
+}
+
+/*Containers*/
+
+.section-container{
+    padding: $section-padding;
+}
+
+/*Headings and paragraphs*/
+
+.big-heading{
+    font-family: $font-big-headers;
+    font-size: $h1-size;
+    font-weight: $fat;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-shadow: 0px 0px 15px rgba(24, 83, 112, 1),0px 0px 20px rgba(24, 83, 112, 1),0px 0px 25px rgba(24, 83, 112, 0.75);
+}
+
+.section-heading{
+    font-family: $font-small-text;
+    font-size: $h2-size;
+    font-weight: $fat;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    letter-spacing: .1rem;
+}
+
+.p-statement{
+    font-size: $basic-text;
+    font-weight: $light;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(108, 108, 108, 1);
+}
+
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: $main1;
+}
+
+.navbar-brand{
+    font-family: $font-small-text;
+    font-weight: $light;
+    font-size: $basic-text;
+    position: relative;
+    left: 20px;
+}
+
+.nav-item{
+    padding: 0 18px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.nav-link, .nav-link:link, .nav-link:visited, .nav-link:focus{
+    font-weight: 100;
+    font-size: $basic-text;
+    color: $white;
+}
+
+.nav-item:hover{
+    .nav-link{
+        font-weight: 600;
+    }
+    transition: .25s ease-in-out;
+}
+
+.active .nav-link{
+    font-weight: $bold;
+    transition: .25s ease-in-out;
+}
+
+.nav-icon{
+    display: none;
+}
+
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: .5s ease-in-out;
+    margin-right: 30px;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $white;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+   margin-top: 0px; 
+}
+
+/* When navigation is clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -30px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 30px;
+    transform: rotate(0deg);
+}
+
+#homepage{
+    display: none;
+}
+    
+
+
+/*TITLE*/
+
+#title{
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(21,114,161,0.8), rgba(21,114,161,0.8)), 
+    url("../img/bg-image-1.jpg")
+    no-repeat center center / cover;
+    opacity: 1;
+}
+
+.title-row{
+    padding-bottom: 5%;
+}
+
+#title .icon-footer{
+    color: $white;
+    font-size: $icons;
+    margin: 3% 3% 3% 3%;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+#title .icon-footer:hover{
+    color: $white;
+    transition: .25s ease-in-out;
+}
+
+
+
+/*PROFILE*/
+
+#profile .section-container{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.textbox{
+    text-align: left;
+}
+
+.profile-text{
+    position: relative; 
+    width: 100%;
+    padding-top: 10px;
+    font-size: $basic-text;
+    font-weight: $normal;
+    line-height: 1.5;
+}
+
+.profile-text::first-letter{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.img-box{
+    float: right;
+    margin: 25px;
+    position: relative;
+    background: #333;
+    width: 320px;
+    height: 320px;
+    transition: 0.25;
+}
+
+.lines {
+    position: absolute;
+    inset: 0;
+    background: $black;
+    overflow: hidden;
+}
+
+.lines::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 200px;
+    background: linear-gradient(transparent, $main2, $main2, $main2, transparent);
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% 
+    {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.lines::after {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    background: $black;
+}
+
+.profile-picture{
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 10px;
+    left: 10px;
+    filter: grayscale(1);
+    border-radius: 0;
+}
+
+.textbox:hover{
+    .profile-picture{
+        filter: grayscale(0);
+        transition: .25s ease-in-out;
+    }
+    .img-box .lines::after{
+        inset: 1px;
+    }
+}
+
+.cv-button{
+    position: absolute;
+    right: 20%;
+    display: inline-block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: $main2;
+    text-decoration: none;
+    transition: .25s ease-in-out;
+}
+
+.cv-button:hover{
+    color: $white;
+    transition: .25s ease-in-out;
+}
+
+
+/*WHAT I DO*/
+
+#do{
+    color: $black;
+    background-color: $white;
+}
+
+.do-circle{
+    position: relative;
+    background-color: $main1;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border-radius: 0;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.do-icon{
+    font-size: $icons-big;
+    color: $white;
+    padding: 40px 0 20px 0;
+}
+
+.do-h3{
+    font-size: $h3-size;
+    font-weight: $fat;
+    padding: 10px 0;
+}
+
+#do p{
+    font-size: $basic-text;
+    font-weight: $light;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/*SKILLS*/
+
+#skills{
+    background-color: $main2;
+    color: $black;
+}
+
+#skills .section-heading{
+    padding-bottom: 5%;
+}
+
+.skill-box{
+    padding: 2% 2%;
+}
+
+.card{
+    border-radius: 0;
+    border: none;
+}
+
+.card-header{
+    background-color: $secondary1;
+    color: $black;
+    border: none;
+    border-radius: 0;
+}
+
+.card-body{
+    text-align: left;
+    padding: 30px;
+}
+
+.card-body p{
+    font-size: $basic-text;
+}
+
+.skills-h3{
+    font-size: $h3-size;
+    font-weight: $fat;
+    padding: 20px 0 10px 0;
+}
+
+.stars{
+    font-size: 1.7rem;
+    float: right;
+    margin: 0 5px;
+    color: $secondary2;
+    transition: .25s ease-in-out;
+}
+
+.skill-item{
+    color: $black;
+    font-weight: bold;
+}
+
+.stars-row:hover{
+    .stars{
+        font-size: 2rem;
+        color: $main1;
+        transition: .25s ease-in-out;
+    }
+}
+
+
+
+/*FOOTER*/
+
+#footer{
+    color: $main2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: $main1;
+    margin: auto;
+    overflow: hidden;
+}
+
+.footer-box::before{
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: -200px;
+    top: -200px;
+    background-image: conic-gradient(transparent, transparent, transparent, $main2);
+    animation: animate2 6s linear infinite;
+    opacity: .5;
+}
+
+.footer-box::after{
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: -200px;
+    top: -200px;
+    background-image: conic-gradient(transparent, transparent, transparent, $main2);
+    animation: animate2 6s linear infinite;
+    animation-delay: -3s;
+    opacity: .5;
+}
+
+.footer-box span{
+    position: absolute;
+    inset: 2px;
+    background: $main1;
+    z-index: 1;
+}
+
+@keyframes animate2 {
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.footer-content{
+    position: absolute;
+    top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-h3{
+    font-size: $h2-size;
+    font-weight: $fat;
+    padding: 3% 0 2% 0;
+}
+
+#footer p{
+    font-size: $basic-text;
+    font-weight: $light;
+}
+
+#footer .copyright{
+    font-size: $small-text;
+    font-weight: $light;
+    padding-bottom: 3%;
+}
+
+.icon-footer{
+    color: $main2;
+    font-size: $icons;
+    margin: 3% 3% 3% 3%;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.icon-footer:hover{
+    color: $white;
+    transition: .25s ease-in-out;
+}
+
+
+
+
+/*Media Queries*/
+
+@media (max-width: 1200px){
+
+    .section-container{
+        padding: $section-padding-mobile;
+    }
+
+    .big-heading{
+        font-size: $h1-size-mobile;
+    }
+
+    .section-heading{
+        font-size: $h2-size-mobile;
+    }
+
+    .icon-footer{
+        font-size: $icons-mobile;
+    }
+
+    #profile .section-container{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .img-box{
+        margin: 10px 0 40px 0;
+        float: none;
+        border-radius: 0;
+    }
+
+    .navbar{
+        padding: 2% 0 2% 0;
+    }
+
+    .navbar-brand{
+        left: 30px;
+    }
+
+    .navbar-collapse{
+        height: 100vh;
+    }
+
+    .navbar-nav{
+        padding: 7% 7% 7% 11%;
+        display: block;
+    }
+
+    .nav-item{
+        border-bottom: 1px solid #ddd;
+        padding: 3% 4% 2% 4%;
+    }
+
+    .nav-item:first-child{
+        border-top: 1px solid #ddd;
+    }
+
+    .nav-icon{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: $icons-navbar;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        color: #ddd;
+    }
+
+    .nav-item:hover {
+        .nav-icon, .nav-text{
+            color: $main1;
+        }
+        background-color: $white;
+    }
+
+    .nav-text{
+        display: flex;
+        justify-content: center;
+    }
+
+    #skills .section-heading{
+        padding-top: 5%;
+    }
+
+    .do-container{
+        padding-top: 7%;
+    }
+
+    .do-box{
+        margin-bottom: 30px;
+    }
+    
+}
+    
+@media (max-width: 576px){
+
+    .navbar{
+        padding: 3% 0 3% 0;
+    }
+
+    #profile .section-container{
+        padding: 25% 5% 20% 5%;
+    }
+
+    #skills .section-container{
+        padding: 20% 5% 20% 5%;
+    }
+
+    #do .section-container{
+        padding: 20% 7% 20% 7%;
+    }
+
+    .img-box{
+        display: block;
+        margin: 20px auto 40px auto;
+        border: none;
+    }
+
+    .profile-text{
+        font-size: $basic-text-mobile;
+    }
+
+    .stars{
+        font-size: 1.3rem;
+        margin: 0 1px;
+    }
+
+    .stars-row:hover{
+        .stars{
+            font-size: 1.4rem;
+            transition: .25s ease-in-out;
+        }
+    }
+
+    .cv-button{
+        padding-top: 5%;
+        position: relative;
+        float: left;
+        margin-left: 20%;
+    }
+
+}
