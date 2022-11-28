@@ -364,7 +364,7 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
   display: block;
-  max-width: 300px;
+  max-width: 360px;
   margin: auto;
   padding-bottom: 50px;
 }
@@ -424,8 +424,12 @@ body {
 }
 
 .stars-row:hover .stars {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #1572A1;
+  transition: 0.25s ease-in-out;
+}
+.stars-row:hover .skill-item {
+  text-decoration: underline;
   transition: 0.25s ease-in-out;
 }
 

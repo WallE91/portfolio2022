@@ -421,7 +421,7 @@ body{
     font-size: $basic-text;
     font-weight: $light;
     display: block;
-    max-width: 300px;
+    max-width: 360px;
     margin: auto;
     padding-bottom: 50px;
 }
@@ -484,8 +484,12 @@ body{
 
 .stars-row:hover{
     .stars{
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: $main1;
+        transition: .25s ease-in-out;
+    }
+    .skill-item{
+        text-decoration: underline;
         transition: .25s ease-in-out;
     }
 }
